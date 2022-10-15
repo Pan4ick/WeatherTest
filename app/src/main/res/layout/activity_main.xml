@@ -123,8 +123,8 @@
                 android:layout_height="match_parent">
 
             <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal"
                     android:id="@+id/l3">
@@ -154,7 +154,7 @@
                         android:layout_weight="1"/>
 
                 <TextView
-                        android:text="22℃"
+                        android:text="17℃"
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:id="@+id/temperature3"
@@ -221,13 +221,307 @@
 
         <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/l5">
+
+                <ImageView
+                        android:id="@+id/weatherIcon5"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cloud"
+                        />
+
+                <TextView
+                        android:id="@+id/main5"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Cloudy"/>
+
+                <TextView
+                        android:text="Krasnogorsk"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city5"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="17℃"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature5"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <ImageView
+                        android:id="@+id/star5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star_big_off"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/l6">
+
+                <ImageView
+                        android:id="@+id/weatherIcon6"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cloud"
+                        />
+
+                <TextView
+                        android:id="@+id/main6"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Cloudy"/>
+
+                <TextView
+                        android:text="Krasnogorsk"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city6"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="22"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature6"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <ImageView
+                        android:id="@+id/star6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star_big_off"/>
+            </LinearLayout>
+
+        </TableRow>
 
         <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="18dp">
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/l7">
+
+                <ImageView
+                        android:id="@+id/weatherIcon7"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cloud"
+                        />
+
+                <TextView
+                        android:id="@+id/main7"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Cloudy"/>
+
+                <TextView
+                        android:text="Krasnogorsk"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city7"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="17℃"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature7"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <ImageView
+                        android:id="@+id/star7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star_big_off"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/l8">
+
+                <ImageView
+                        android:id="@+id/weatherIcon8"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cloud"
+                        />
+
+                <TextView
+                        android:id="@+id/main8"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Cloudy"/>
+
+                <TextView
+                        android:text="Krasnogorsk"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city8"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="22"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature8"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <ImageView
+                        android:id="@+id/star8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star_big_off"/>
+            </LinearLayout>
 
         </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/l9">
+
+                <ImageView
+                        android:id="@+id/weatherIcon9"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cloud"
+                        />
+
+                <TextView
+                        android:id="@+id/main9"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Cloudy"/>
+
+                <TextView
+                        android:text="Krasnogorsk"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city9"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="22℃"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature9"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <ImageView
+                        android:id="@+id/star9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star_big_off"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/l10">
+
+                <ImageView
+                        android:id="@+id/weatherIcon10"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cloud"
+                        />
+
+                <TextView
+                        android:id="@+id/main10"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Cloudy"/>
+
+                <TextView
+                        android:text="Krasnogorsk"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city10"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="22"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature10"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <ImageView
+                        android:id="@+id/star10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star_big_off"/>
+            </LinearLayout>
+
+        </TableRow>
+
     </TableLayout>
 
     <Button

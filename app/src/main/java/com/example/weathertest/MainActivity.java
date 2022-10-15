@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String APP_ID = "348b4aa02eb4246162995089567cda2e";
     SharedPreferences settings;
     public static final String APP_PREFERENCES = "favSettings";
-    private static final List<String> cities = List.of("Krasnogorsk", "Moscow", "Yaroslavl", "Saint Petersburg");
+    private static final List<String> cities = List.of("Astrakhan", " Sochi", "Vladimir", "Yekaterinburg", "Yoshkar-Ola", "Kaliningrad", "Magadan", "Nizhny Tagil", "Smolensk", "Tolyatti");
     List<TextView> mainViews = new ArrayList<>();
     List<TextView> cityViews = new ArrayList<>();
     List<TextView> temperatureViews = new ArrayList<>();
@@ -41,11 +41,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mainViews = List.of(findViewById(R.id.main1), findViewById(R.id.main2), findViewById(R.id.main3), findViewById(R.id.main4));
-        imageViews = List.of(findViewById(R.id.weatherIcon1), findViewById(R.id.weatherIcon2), findViewById(R.id.weatherIcon3), findViewById(R.id.weatherIcon4));
-        cityViews = List.of(findViewById(R.id.city1), findViewById(R.id.city2), findViewById(R.id.city3), findViewById(R.id.city4));
-        temperatureViews = List.of(findViewById(R.id.temperature1), findViewById(R.id.temperature2), findViewById(R.id.temperature3), findViewById(R.id.temperature4));
-        favoriteViews = List.of(findViewById(R.id.star1), findViewById(R.id.star2), findViewById(R.id.star3), findViewById(R.id.star4));
+        mainViews = List.of(findViewById(R.id.main1), findViewById(R.id.main2), findViewById(R.id.main3), findViewById(R.id.main4),
+                findViewById(R.id.main5), findViewById(R.id.main6), findViewById(R.id.main7), findViewById(R.id.main8), findViewById(R.id.main9), findViewById(R.id.main10));
+        imageViews = List.of(findViewById(R.id.weatherIcon1), findViewById(R.id.weatherIcon2), findViewById(R.id.weatherIcon3), findViewById(R.id.weatherIcon4),
+                findViewById(R.id.weatherIcon5), findViewById(R.id.weatherIcon6), findViewById(R.id.weatherIcon7), findViewById(R.id.weatherIcon8), findViewById(R.id.weatherIcon9), findViewById(R.id.weatherIcon10));
+        cityViews = List.of(findViewById(R.id.city1), findViewById(R.id.city2), findViewById(R.id.city3), findViewById(R.id.city4),
+                findViewById(R.id.city5), findViewById(R.id.city6), findViewById(R.id.city7), findViewById(R.id.city8), findViewById(R.id.city9), findViewById(R.id.city10));
+        temperatureViews = List.of(findViewById(R.id.temperature1), findViewById(R.id.temperature2), findViewById(R.id.temperature3), findViewById(R.id.temperature4),
+                findViewById(R.id.temperature5), findViewById(R.id.temperature6), findViewById(R.id.temperature7), findViewById(R.id.temperature8), findViewById(R.id.temperature9), findViewById(R.id.temperature10));
+        favoriteViews = List.of(findViewById(R.id.star1), findViewById(R.id.star2), findViewById(R.id.star3), findViewById(R.id.star4),
+                findViewById(R.id.star5), findViewById(R.id.star6), findViewById(R.id.star7), findViewById(R.id.star8), findViewById(R.id.star9), findViewById(R.id.star10));
         settings = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);
     }
 

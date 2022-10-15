@@ -49,33 +49,29 @@ public class FavoriteCities extends AppCompatActivity {
         for (CellModel c : cellModels) {
             if (c.isFavorite()) {
                 TableRow tableRow = new TableRow(this);
-//                ImageView imageView = new ImageView(this);
                 TextView main = new TextView(this);
                 TextView city = new TextView(this);
                 TextView wind = new TextView(this);
                 TextView temperature = new TextView(this);
                 ImageView starView = new ImageView(this);
-//                imageView.setImageResource(R.drawable.cloud);
-//                Glide.with(this).load(ICONS_URL + c.getIcon()).into(imageView);
-//                tableRow.addView(imageView);
-                main.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.MATCH_PARENT));
+                main.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT));
                 main.setText(c.getWeather());
                 main.setTextSize(12);
                 tableRow.addView(main);
-                city.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.MATCH_PARENT));
+                city.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT));
                 city.setText(c.getCity());
                 city.setTextSize(12);
                 tableRow.addView(city);
                 wind.setText(String.format("%,.2f", c.getWind()) + "m/s");
                 wind.setTextSize(12);
-                wind.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.MATCH_PARENT));
+                wind.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT));
                 tableRow.addView(wind);
                 temperature.setText(String.format("%,.2f", c.getTemperature()) + "℃");
                 temperature.setTextSize(12);
-                main.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.MATCH_PARENT));
+                main.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT));
                 tableRow.addView(temperature);
                 starView.setImageResource(android.R.drawable.btn_star_big_on);
-                main.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT));
+                main.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
                 tableRow.addView(starView);
                 starView.setOnClickListener(v -> {
                     c.changeFavorite();
