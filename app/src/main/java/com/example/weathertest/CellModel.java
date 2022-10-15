@@ -1,6 +1,8 @@
 package com.example.weathertest;
 
-public class CellModel {
+import java.io.Serializable;
+
+public class CellModel implements Serializable {
     private String weather;
     private String description;
     private String city;
@@ -47,6 +49,10 @@ public class CellModel {
 
     public void setFavorite(boolean favorite) {
         this.favorite = favorite;
+    }
+
+    public void changeFavorite() {
+        this.favorite = !favorite;
     }
 
     public String getDescription() {

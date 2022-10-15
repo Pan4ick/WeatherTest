@@ -7,147 +7,237 @@
     tools:context=".MainActivity">
 
     <TableLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:id="@+id/tableLayout">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/l1">
 
                 <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="68dp"
-                    android:layout_height="37dp"
-                    android:layout_weight="1"
-                    tools:srcCompat="@tools:sample/avatars" />
+                        android:id="@+id/weatherIcon1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cloud"
+                        />
 
                 <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
+                        android:id="@+id/main1"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Cloudy"/>
+
+                <TextView
+                        android:text="Krasnogorsk"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city1"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="17℃"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature1"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
 
                 <ImageView
-                    android:id="@+id/favoriteStar1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/btn_star" />
+                        android:id="@+id/star1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star_big_off"/>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/l2">
 
                 <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="68dp"
-                    android:layout_height="37dp"
-                    android:layout_weight="1"
-                    tools:srcCompat="@tools:sample/avatars" />
+                        android:id="@+id/weatherIcon2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cloud"
+                        />
 
                 <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
-                <ImageView
-                    android:id="@+id/favoritStar6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/btn_star" />
-            </LinearLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="68dp"
-                    android:layout_height="37dp"
-                    android:layout_weight="1"
-                    tools:srcCompat="@tools:sample/avatars" />
+                        android:id="@+id/main2"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Cloudy"/>
 
                 <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
-                <ImageView
-                    android:id="@+id/favoriteStar1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/btn_star" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="68dp"
-                    android:layout_height="37dp"
-                    android:layout_weight="1"
-                    tools:srcCompat="@tools:sample/avatars" />
+                        android:text="Krasnogorsk"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city2"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
 
                 <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
+                        android:text="22"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature2"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
 
                 <ImageView
-                    android:id="@+id/favoritStar6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/btn_star" />
+                        android:id="@+id/star2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star_big_off"/>
             </LinearLayout>
 
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/l3">
+
+                <ImageView
+                        android:id="@+id/weatherIcon3"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cloud"
+                        />
+
+                <TextView
+                        android:id="@+id/main3"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Cloudy"/>
+
+                <TextView
+                        android:text="Krasnogorsk"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city3"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="22℃"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature3"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <ImageView
+                        android:id="@+id/star3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star_big_off"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/l4">
+
+                <ImageView
+                        android:id="@+id/weatherIcon4"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cloud"
+                        />
+
+                <TextView
+                        android:id="@+id/main4"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:text="Cloudy"/>
+
+                <TextView
+                        android:text="Krasnogorsk"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/city4"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="22"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature4"
+                        android:textSize="10dp"
+                        android:layout_weight="1"/>
+
+                <ImageView
+                        android:id="@+id/star4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star_big_off"/>
+            </LinearLayout>
+
+        </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="18dp">
+
+        </TableRow>
     </TableLayout>
+
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:onClick="openFavorites"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
